@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishak K Bhat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/1.jpg" alt="Vishak K Bhat" class="profile-img" />
+      <div>
+        <h1>Vishak K Bhat</h1>
+        <p>ML Researcher | GSoC Contributor | Kaggle Competitions Expert</p>
+        <nav>
+          <a href="#overview">Overview</a>
+          <a href="#research">Research Interests</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>I am a final-year Integrated M.Tech student at IIT Dhanbad, deeply passionate about machine learning research. I aspire to pursue a Ph.D. in the future, focusing on Natural Language Procesasing, Compuiter Vision, multimodal learning, Reinforcement learning and graph-based deep learning. I enjoy working on real-world ML problems at the intersection of academia and industry.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Efficient Finetuning of Large Language Models</li>
+        <li>Optimizing LLMs in size</li>
+        <li>Advanced Computer Vision techniques</li>
+        <li>Graph Neural Networks for various problems</li>
+
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="accordion">
+        <div class="card" onclick="toggleContent(this)">
+          <h3>Swiggy (2025)</h3>
+          <p class="hidden"><ul>
+            <li>Optimized Surge Values: Solved the Multi-Armed Bandit (MAB) problem by training a model using Policy Grad
+                increasing the show up rate by 5% with no increase in expense.</li>
+            <li> Designed an algorithm to rezone the existing zones to minimize cross-zone orders by 6%</li>
+          </ul></p>
+        </div>
+        <div class="card" onclick="toggleContent(this)">
+          <h3>Bosch Global Software Technologies (2024)</h3>
+          <p class="hidden"><ul>
+            <li>UsedMaskformer, Mask2former models to obtain SemanticSegmentation of the dataset achieving F1 score of 0.89</li>
+            <li> Applied DINO a self-supervised learning algorithm to get embeddings and then used GroundingDINO (object
+                detection) to extract objects and created 10K images for fine-tuning the segmentation model.</li>
+          </ul></p>
+        </div>
+        <div class="card" onclick="toggleContent(this)">
+          <h3>UiT Norway (2023)</h3>
+          <p class="hidden"><ul>
+            <li> Designed a model to process variable-size images by converting them into graphs, enabling further analysis for
+                benchmarking tasks. Achieved an F1 score of 0.92 on the Bengali text dataset by graph classification</li>
+          </ul></p>
+        </div>
+        <div class="card" onclick="toggleContent(this)">
+          <h3>GSoC @ ML4SCI (2024)</h3>
+          <p class="hidden"><ul>
+            <li> Implemented two GNN architectures that outperformed transformer models in predicting the momentum of Muon
+                particles. One model improved inference speed by 27%, while the other reduced mean squared error by 14%.</li>
+            <li> Performed 3 methods to convert the data into graphs and then created a custom Message Passing Layer </li>
+          </ul></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3> Vesuvius Challenge- Ink Detection</h3>
+          <p> Segmented ink in papyrus fragments, achieving an F-beta score of 0.74.</p>
+        </div>
+        <div class="card">
+          <h3> Personally Identifiable Information (PII) classification</h3>
+          <p> Finetuned BERT to identify PII by masked LM, then finetuned it to classify the type of PII achieving F1 score of 0.92</p>
+        </div>
+        <!-- <div class="card">
+          <h3>3D Object Detection via BEV</h3>
+          <p>Camera-based multi-view fusion model for autonomous vehicle detection.</p>
+        </div>
+        <div class="card">
+          <h3>RL for Zone Optimization</h3>
+          <p>Reinforcement learning agent to optimize delivery zone allocations in real time.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Selected for Google Summer of Code 2024</li>
+        <li>Bronze Medalist – NeurIPS Lux-AI Challenge</li>
+        <li>Kaggle Competitions Expert – Highest Rank: 923</li>
+        <li>Bronze Medalist – "You Can’t Please Them All" LLM Competition</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a class="button" href="assets/resume.pdf" target="_blank">Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <p><strong>Email:</strong> vishak.bhat5@gmail.com</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Vishak-Bhat30" target="_blank">Vishak-Bhat30</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishak-k-bhat-807998227/" target="_blank">vishak-k-bhat</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vishak K Bhat</p>
+  </footer>
+
+  <script>
+    function toggleContent(card) {
+      const p = card.querySelector("p");
+      p.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
