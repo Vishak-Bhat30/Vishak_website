@@ -44,41 +44,111 @@
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <div class="accordion">
-        <div class="card" onclick="toggleContent(this)">
-          <h3>Swiggy (2025)</h3>
-          <p class="hidden"><ul>
-            <li>Optimized Surge Values: Solved the Multi-Armed Bandit (MAB) problem by training a model using Policy Grad
-                increasing the show up rate by 5% with no increase in expense.</li>
-            <li> Designed an algorithm to rezone the existing zones to minimize cross-zone orders by 6%</li>
-          </ul></p>
+        <h2>Experience</h2>
+        <div class="accordion">
+
+            <div class="exp-card">
+                <button class="exp-header" onclick="toggleAccordion(this)">
+                  <span>Google Summer of Code - ML4SCI</span> <span>+</span>
+                </button>
+                <div class="exp-content">
+                  <ul>
+                    <li>Developed two GNN models outperforming Transformers for momentum prediction on collider data.</li>
+                    <li>Reduced mean squared error by 14% and boosted inference speed by 27% using custom message passing layers.</li>
+                  </ul>
+                </div>
+              </div>
+      
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>Swiggy - Data Scientist Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Optimized surge values using Policy Gradient on a Multi-Armed Bandit setup, increasing show-up rate by 5% without extra expense.</li>
+                <li>Designed a rezoning algorithm that reduced cross-zone deliveries by 6%.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>NyunAI - Research Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Developed Nyun-Llama3-62B, a model with 12% fewer parameters than Llama-3-70B, achieving comparable or
+                    superior performance across MMLU, Winogrande, BoolQ, Hellaswag, Arc Challenge, and GSM8K benchmarks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>Entrupy - Research Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Trained a unified model for authenticity verification using multiple images per session from different regions,
+                    achieving a 95% true positive rate (TPR) with a 3% false positive rate (FPR).</li>
+                <li>Used ANNOYtoretrieve similar past images for classification and Grad-CAM to highlight decisive regions.</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>Bosch Global Software Technologies - Computer Vision Research intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Achieved 0.89 F1 score using MaskFormer, Mask2Former for semantic segmentation on driving scenes.</li>
+                <li>Leveraged DINO & GroundingDINO for self-supervised object detection and image generation for fine-tuning.</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>UiT Norway - Research Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Built a graph-based classifier for document layout understanding, achieving 0.92 F1 score on Bengali dataset.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>SimplyFI Softech - ML Engineer Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Performed object detection using Yolo models to detect the set of objects in a CCTV image.</li>
+                <li>Document AI : Automated the text extraction from documents, verified their validity, and stored them
+                    in the database for banks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <button class="exp-header" onclick="toggleAccordion(this)">
+              <span>Patil Kaki - ML Engineer Intern</span> <span>+</span>
+            </button>
+            <div class="exp-content">
+              <ul>
+                <li>Worked on the real-time data generated on a daily basis and forecasted monthly, yearly turnovers.</li>
+                <li>Used ARIMA, VARIMA (Time Series) for forecasting with RMSE = 11.24.</li>
+              </ul>
+            </div>
+          </div>
+      
+          
+      
         </div>
-        <div class="card" onclick="toggleContent(this)">
-          <h3>Bosch Global Software Technologies (2024)</h3>
-          <p class="hidden"><ul>
-            <li>UsedMaskformer, Mask2former models to obtain SemanticSegmentation of the dataset achieving F1 score of 0.89</li>
-            <li> Applied DINO a self-supervised learning algorithm to get embeddings and then used GroundingDINO (object
-                detection) to extract objects and created 10K images for fine-tuning the segmentation model.</li>
-          </ul></p>
-        </div>
-        <div class="card" onclick="toggleContent(this)">
-          <h3>UiT Norway (2023)</h3>
-          <p class="hidden"><ul>
-            <li> Designed a model to process variable-size images by converting them into graphs, enabling further analysis for
-                benchmarking tasks. Achieved an F1 score of 0.92 on the Bengali text dataset by graph classification</li>
-          </ul></p>
-        </div>
-        <div class="card" onclick="toggleContent(this)">
-          <h3>GSoC @ ML4SCI (2024)</h3>
-          <p class="hidden"><ul>
-            <li> Implemented two GNN architectures that outperformed transformer models in predicting the momentum of Muon
-                particles. One model improved inference speed by 27%, while the other reduced mean squared error by 14%.</li>
-            <li> Performed 3 methods to convert the data into graphs and then created a custom Message Passing Layer </li>
-          </ul></p>
-        </div>
-      </div>
-    </section>
+      </section>
+      
 
     <section id="projects">
       <h2>Projects</h2>
@@ -91,24 +161,23 @@
           <h3> Personally Identifiable Information (PII) classification</h3>
           <p> Finetuned BERT to identify PII by masked LM, then finetuned it to classify the type of PII achieving F1 score of 0.92</p>
         </div>
-        <!-- <div class="card">
-          <h3>3D Object Detection via BEV</h3>
-          <p>Camera-based multi-view fusion model for autonomous vehicle detection.</p>
-        </div>
         <div class="card">
-          <h3>RL for Zone Optimization</h3>
-          <p>Reinforcement learning agent to optimize delivery zone allocations in real time.</p>
-        </div> -->
+          <h3>Vision Transformers</h3>
+          <p>Trained Vision Transformer (ViT) model to distinguish between electrons and photons, achieving a ROC AUC of 0.94</p>
+        </div>
       </div>
     </section>
 
     <section id="achievements">
       <h2>Achievements</h2>
       <ul>
-        <li>Selected for Google Summer of Code 2024</li>
+        <li>Selected to present my work at the GSoC’24 Summarization Program among all GSoC students.</li>
         <li>Bronze Medalist – NeurIPS Lux-AI Challenge</li>
-        <li>Kaggle Competitions Expert – Highest Rank: 923</li>
+        <li>Kaggle Competition Expert: Top 0.1% ranking among 185k kagglers.</li>
         <li>Bronze Medalist – "You Can’t Please Them All" LLM Competition</li>
+        <li> Winner, AgenticAI Hackathon: Secured 1’st place in a Microsoft-organized hackathon, competing against
+            Swiggy employees, by developing an AI-powered fleet management system.</li>
+        <li>Lead, ML Division– CyberLabs: Mentored juniors through teaching sessions and earning high recognition</li>
       </ul>
     </section>
 
@@ -132,9 +201,24 @@
   </footer>
 
   <script>
-    function toggleContent(card) {
-      const p = card.querySelector("p");
-      p.classList.toggle("hidden");
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector("span:last-child");
+      const allContents = document.querySelectorAll('.exp-content');
+      const allButtons = document.querySelectorAll('.exp-header span:last-child');
+  
+      // Close all others
+      allContents.forEach(c => { if (c !== content) c.style.display = 'none'; });
+      allButtons.forEach(i => { if (i !== icon) i.textContent = '+'; });
+  
+      // Toggle current
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        icon.textContent = "+";
+      } else {
+        content.style.display = "block";
+        icon.textContent = "−";
+      }
     }
   </script>
 </body>
