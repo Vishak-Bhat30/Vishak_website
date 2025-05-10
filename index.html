@@ -32,17 +32,6 @@
       <p>I am a final-year Integrated M.Tech student at IIT Dhanbad, deeply passionate about machine learning research. I aspire to pursue a Ph.D. in the future, focusing on Natural Language Procesasing, Compuiter Vision, multimodal learning, Reinforcement learning and graph-based deep learning. I enjoy working on real-world ML problems at the intersection of academia and industry.</p>
     </section>
 
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Efficient Finetuning of Large Language Models</li>
-        <li>Optimizing LLMs in size</li>
-        <li>Advanced Computer Vision techniques</li>
-        <li>Graph Neural Networks for various problems</li>
-
-      </ul>
-    </section>
-
     <section id="experience">
         <h2>Experience</h2>
         <div class="accordion">
@@ -148,7 +137,17 @@
       
         </div>
       </section>
-      
+    
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Efficient Finetuning of Large Language Models</li>
+          <li>Optimizing LLMs in size</li>
+          <li>Advanced Computer Vision techniques</li>
+          <li>Graph Neural Networks for various problems</li>
+  
+        </ul>
+      </section>
 
     <section id="projects">
       <h2>Projects</h2>
@@ -204,19 +203,24 @@
     function toggleAccordion(button) {
       const content = button.nextElementSibling;
       const icon = button.querySelector("span:last-child");
+
+      // Close all other sections
       const allContents = document.querySelectorAll('.exp-content');
-      const allButtons = document.querySelectorAll('.exp-header span:last-child');
-  
-      // Close all others
-      allContents.forEach(c => { if (c !== content) c.style.display = 'none'; });
-      allButtons.forEach(i => { if (i !== icon) i.textContent = '+'; });
-  
-      // Toggle current
-      if (content.style.display === "block") {
-        content.style.display = "none";
+      const allCards = document.querySelectorAll('.exp-card');
+
+      allContents.forEach(c => {
+        if (c !== content) c.classList.remove('open');
+      });
+      allCards.forEach(card => {
+        if (card !== button.closest('.exp-card')) card.classList.remove('open');
+      });
+
+      // Toggle the current section
+      if (content.classList.contains('open')) {
+        content.classList.remove('open');
         icon.textContent = "+";
       } else {
-        content.style.display = "block";
+        content.classList.add('open');
         icon.textContent = "−";
       }
     }

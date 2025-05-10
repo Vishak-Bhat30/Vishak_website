@@ -80,11 +80,12 @@
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
   }
   
   .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
   
   .card p.hidden {
@@ -118,7 +119,6 @@
     font-size: 14px;
   }
   
-
   .accordion {
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@
   }
   
   .exp-card {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     overflow: hidden;
@@ -145,6 +145,8 @@
     font-weight: bold;
     cursor: pointer;
     color: #0f172a;
+    border-bottom: 2px solid #dbeafe;
+    transition: background-color 0.3s ease;
   }
   
   .exp-header:hover {
@@ -156,6 +158,15 @@
     padding: 15px 20px;
     background-color: #f9fafb;
     border-top: 1px solid #dbeafe;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .exp-content.open {
+    display: block;
+    max-height: 1000px; /* Give enough space to expand */
+    padding-top: 20px; /* Add padding once expanded */
   }
   
   .exp-content ul {
@@ -166,5 +177,13 @@
   .exp-content li {
     margin-bottom: 8px;
     line-height: 1.5;
+  }
+  
+  .exp-header span:last-child {
+    font-size: 20px;
+  }
+  
+  .exp-card.open .exp-header {
+    background-color: #a3d9ff;
   }
   
