@@ -3,227 +3,719 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vishak K Bhat</title>
+  <title>Vishak K Bhat — ML Researcher</title>
+  <meta name="description" content="Vishak K Bhat — ML Researcher, GSoC Contributor, Kaggle Competitions Expert. Personal portfolio and research website.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/1.jpg" alt="Vishak K Bhat" class="profile-img" />
-      <div>
-        <h1>Vishak K Bhat</h1>
-        <p>ML Researcher | GSoC Contributor | Kaggle Competitions Expert</p>
-        <nav>
-          <a href="#overview">Overview</a>
-          <a href="#research">Research Interests</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#achievements">Achievements</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
-        </nav>
+
+  <!-- ========== STICKY NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">VKB</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-animation">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-duration="800">
+        <img src="assets/1.jpg" alt="Vishak K Bhat" class="hero-image" />
+        <div class="hero-image-ring"></div>
+      </div>
+      <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Vishak K Bhat</h1>
+        <div class="hero-typewriter">
+          <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Final-year Integrated M.Tech student at <strong>IIT Dhanbad</strong>, passionate about pushing the boundaries of machine learning research.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Get in Touch</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-file-alt"></i> Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Vishak-Bhat30" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/vishak-k-bhat-807998227/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.kaggle.com/vishakkbhat" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+          <a href="mailto:vishak.bhat5@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
     </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </header>
 
   <main>
-    <section id="overview">
-      <h2>Overview</h2>
-      <p>I am a final-year Integrated M.Tech student at IIT Dhanbad, deeply passionate about machine learning research. I aspire to pursue a Ph.D. in the future, focusing on Natural Language Procesasing, Compuiter Vision, multimodal learning, Reinforcement learning and graph-based deep learning. I enjoy working on real-world ML problems at the intersection of academia and industry.</p>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">01.</span> About Me</h2>
+        <div class="about-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-text">
+            <p>
+              I am a final-year Integrated M.Tech student at <strong>IIT (ISM) Dhanbad</strong> with a <strong>CGPA of 8.85</strong>, deeply passionate
+              about machine learning research. Currently a <strong>Research Intern at Microsoft Research</strong>,
+              I work on improving the efficiency of large reasoning models and building open-source frameworks
+              for test-time scaling in LLMs, mentored by
+              <a href="https://amitsharma.in/" target="_blank" class="mentor-link">Amit Sharma</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/nagarajn/" target="_blank" class="mentor-link">Nagarajan Natarajan</a>, and
+              <a href="https://people.iith.ac.in/vineethnb/" target="_blank" class="mentor-link">Vineeth N. Balasubramanian</a>.
+            </p>
+            <p>
+              I have also worked on <strong>LLM-driven causal discovery</strong> and have hands-on experience across
+              a broad spectrum of domains including <strong>Machine Learning</strong>, <strong>Deep Learning</strong>,
+              <strong>Computer Vision</strong>, <strong>NLP</strong>, <strong>Graph Neural Networks</strong>,
+              <strong>Reinforcement Learning</strong>, and <strong>Stable Diffusion</strong>.
+            </p>
+            <p>
+              I aspire to pursue a <strong>Ph.D.</strong> focusing on <strong>LLM reasoning</strong>,
+              <strong>Computer Vision</strong>, causal discovery, and multimodal learning.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">LLM Reasoning</span>
+              <span class="tag">Verified Reasoning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">Causal Discovery</span>
+              <span class="tag">Multimodal &amp; VLMs</span>
+              <span class="tag">Diffusion Models</span>
+            </div>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="highlight-number">9+</div>
+              <div class="highlight-label">Internships</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-file-alt"></i></div>
+              <div class="highlight-number">ICML</div>
+              <div class="highlight-label">Under Review</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-medal"></i></div>
+              <div class="highlight-number">Top 0.1%</div>
+              <div class="highlight-label">Kaggle</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i class="fas fa-microscope"></i></div>
+              <div class="highlight-number">MSR</div>
+              <div class="highlight-label">Research Intern</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="accordion">
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">02.</span> Experience</h2>
+        <div class="timeline">
 
-            <div class="exp-card">
-                <button class="exp-header" onclick="toggleAccordion(this)">
-                  <span>Google Summer of Code - ML4SCI</span> <span>+</span>
-                </button>
-                <div class="exp-content">
-                  <ul>
-                    <li>Developed two GNN models outperforming Transformers for momentum prediction on collider data.</li>
-                    <li>Reduced mean squared error by 14% and boosted inference speed by 27% using custom message passing layers.</li>
-                  </ul>
-                </div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="timeline-marker">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Research Intern</h3>
+                <span class="timeline-company">Microsoft Research</span>
+                <span class="timeline-date">Nov 2025 – Present</span>
               </div>
-      
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>Swiggy - Data Scientist Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+              <ul>
+                <li>Improving the efficiency of large reasoning language models (LRMs) via early-stopping mechanisms.</li>
+                <li>Designed and open-sourced <a href="https://github.com/microsoft/interwhen" target="_blank" style="color: var(--primary); font-weight: 600;">interwhen</a>, a test-time verification framework that ensures reasoning traces are valid using a configurable set of verifiers — enabling verifiable reasoning where outputs satisfy explicit correctness constraints.</li>
+                <li>The framework introduces verifier compute as a new axis for test-time scaling, providing a plug-and-play mechanism to improve instance-level reliability of any language model without retraining.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>LLM Reasoning</span><span>Verified Reasoning</span><span>Test-time Scaling</span><span>Open Source</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="timeline-marker">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Research Intern</h3>
+                <span class="timeline-company">Sony Research India</span>
+                <span class="timeline-date">Jun – Nov 2025</span>
+              </div>
+              <ul>
+                <li>Improving upon CausalOrder and LLM CD by developing a novel LLM-driven causal discovery framework.</li>
+                <li>Enhancing causal discovery through parallel use of Partial Ancestral Graphs (PAG) with LLM-guided search, benchmarked on standard datasets including Asia, Cancer, Earthquake, Child, and Survey.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Causal Discovery</span><span>LLMs</span><span>PAG</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-marker">
+              <i class="fas fa-motorcycle"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Data Scientist Intern</h3>
+                <span class="timeline-company">Swiggy</span>
+                <span class="timeline-date">Aug 2024 – May 2025</span>
+              </div>
               <ul>
                 <li>Optimized surge values using Policy Gradient on a Multi-Armed Bandit setup, increasing show-up rate by 5% without extra expense.</li>
                 <li>Designed a rezoning algorithm that reduced cross-zone deliveries by 6%.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>RL</span><span>Multi-Armed Bandit</span><span>Optimization</span>
+              </div>
             </div>
           </div>
 
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>NyunAI - Research Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="timeline-marker">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Google Summer of Code</h3>
+                <span class="timeline-company">ML4SCI</span>
+                <span class="timeline-date">Apr – Sep 2024</span>
+              </div>
               <ul>
-                <li>Developed Nyun-Llama3-62B, a model with 12% fewer parameters than Llama-3-70B, achieving comparable or
-                    superior performance across MMLU, Winogrande, BoolQ, Hellaswag, Arc Challenge, and GSM8K benchmarks.</li>
+                <li>Developed two GNN models outperforming Transformers for momentum prediction on collider data.</li>
+                <li>Reduced mean squared error by 14% and boosted inference speed by 27% using custom message passing layers.</li>
+                <li><a href="https://github.com/ML4SCI/CMS" target="_blank" style="color: var(--primary); font-weight: 600;"><i class="fab fa-github"></i> Code</a></li>
               </ul>
+              <div class="timeline-tags">
+                <span>GNN</span><span>PyTorch</span><span>Physics ML</span>
+              </div>
             </div>
           </div>
 
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>Entrupy - Research Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-marker">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Research Intern</h3>
+                <span class="timeline-company">NyunAI</span>
+                <span class="timeline-date">May – Jun 2024</span>
+              </div>
               <ul>
-                <li>Trained a unified model for authenticity verification using multiple images per session from different regions,
-                    achieving a 95% true positive rate (TPR) with a 3% false positive rate (FPR).</li>
-                <li>Used ANNOYtoretrieve similar past images for classification and Grad-CAM to highlight decisive regions.</li>
+                <li>Developed Nyun-Llama3-62B, a model with 12% fewer parameters than Llama-3-70B, achieving comparable or superior performance across MMLU, Winogrande, BoolQ, Hellaswag, Arc Challenge, and GSM8K benchmarks.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>LLM Compression</span><span>Model Pruning</span><span>Benchmarking</span>
+              </div>
             </div>
           </div>
-      
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>Bosch Global Software Technologies - Computer Vision Research intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="timeline-marker">
+              <i class="fas fa-car"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>CV Research Intern</h3>
+                <span class="timeline-company">Bosch Global Software Technologies</span>
+                <span class="timeline-date">Jan – May 2024</span>
+              </div>
               <ul>
                 <li>Achieved 0.89 F1 score using MaskFormer, Mask2Former for semantic segmentation on driving scenes.</li>
-                <li>Leveraged DINO & GroundingDINO for self-supervised object detection and image generation for fine-tuning.</li>
+                <li>Leveraged DINO &amp; GroundingDINO for self-supervised object detection and image generation for fine-tuning.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>Segmentation</span><span>DINO</span><span>Autonomous Driving</span>
+              </div>
             </div>
           </div>
-      
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>UiT Norway - Research Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-marker">
+              <i class="fas fa-globe-europe"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Research Intern</h3>
+                <span class="timeline-company">UiT Norway — Bio-AI Labs</span>
+                <span class="timeline-date">Oct – Dec 2023</span>
+              </div>
               <ul>
                 <li>Built a graph-based classifier for document layout understanding, achieving 0.92 F1 score on Bengali dataset.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>GNN</span><span>Document AI</span><span>Layout Analysis</span>
+              </div>
             </div>
           </div>
 
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>SimplyFI Softech - ML Engineer Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
+            <div class="timeline-marker">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>ML Engineer Intern</h3>
+                <span class="timeline-company">SimplyFI Softech</span>
+              </div>
               <ul>
-                <li>Performed object detection using Yolo models to detect the set of objects in a CCTV image.</li>
-                <li>Document AI : Automated the text extraction from documents, verified their validity, and stored them
-                    in the database for banks.</li>
+                <li>Performed object detection using YOLO models to detect objects in CCTV images.</li>
+                <li>Document AI: Automated text extraction from documents, verified validity, and stored them in the database for banks.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>YOLO</span><span>Document AI</span><span>OCR</span>
+              </div>
             </div>
           </div>
 
-          <div class="exp-card">
-            <button class="exp-header" onclick="toggleAccordion(this)">
-              <span>Patil Kaki - ML Engineer Intern</span> <span>+</span>
-            </button>
-            <div class="exp-content">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-marker">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>ML Engineer Intern</h3>
+                <span class="timeline-company">Patil Kaki</span>
+              </div>
               <ul>
-                <li>Worked on the real-time data generated on a daily basis and forecasted monthly, yearly turnovers.</li>
+                <li>Worked on real-time data generated daily and forecasted monthly, yearly turnovers.</li>
                 <li>Used ARIMA, VARIMA (Time Series) for forecasting with RMSE = 11.24.</li>
               </ul>
+              <div class="timeline-tags">
+                <span>Time Series</span><span>ARIMA</span><span>Forecasting</span>
+              </div>
             </div>
           </div>
-      
-          
-      
-        </div>
-      </section>
-    
-      <section id="research">
-        <h2>Research Interests</h2>
-        <ul>
-          <li>Efficient Finetuning of Large Language Models</li>
-          <li>Optimizing LLMs in size</li>
-          <li>Advanced Computer Vision techniques</li>
-          <li>Graph Neural Networks for various problems</li>
-  
-        </ul>
-      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3> Vesuvius Challenge- Ink Detection</h3>
-          <p> Segmented ink in papyrus fragments, achieving an F-beta score of 0.74.</p>
-        </div>
-        <div class="card">
-          <h3> Personally Identifiable Information (PII) classification</h3>
-          <p> Finetuned BERT to identify PII by masked LM, then finetuned it to classify the type of PII achieving F1 score of 0.92</p>
-        </div>
-        <div class="card">
-          <h3>Vision Transformers</h3>
-          <p>Trained Vision Transformer (ViT) model to distinguish between electrons and photons, achieving a ROC AUC of 0.94</p>
         </div>
       </div>
     </section>
 
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Selected to present my work at the GSoC’24 Summarization Program among all GSoC students.</li>
-        <li>Bronze Medalist – NeurIPS Lux-AI Challenge</li>
-        <li>Kaggle Competition Expert: Top 0.1% ranking among 185k kagglers.</li>
-        <li>Bronze Medalist – "You Can’t Please Them All" LLM Competition</li>
-        <li> Winner, AgenticAI Hackathon: Secured 1’st place in a Microsoft-organized hackathon, competing against
-            Swiggy employees, by developing an AI-powered fleet management system.</li>
-        <li>Lead, ML Division– CyberLabs: Mentored juniors through teaching sessions and earning high recognition</li>
-      </ul>
-    </section>
+    <!-- ========== PUBLICATIONS SECTION ========== -->
+    <section id="publications" class="section">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">03.</span> Publications</h2>
+        <div class="publications-list">
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <a class="button" href="assets/resume.pdf" target="_blank">Download Resume (PDF)</a>
-    </section>
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="publication-venue"><span class="venue-badge under-review">ICML 2026 · Under Review</span></div>
+            <h3 class="publication-title">interwhen: A Generalizable Framework for Verifiable Reasoning with Test-time Monitors</h3>
+            <p class="publication-authors"><strong>Vishak K Bhat</strong>, Prateek Chanda, Ashmit Khandelwal, Maitreyi Swaroop, Subbarao Kambhampati, Vineeth N. Balasubramanian, Nagarajan Natarajan, Amit Sharma</p>
+            <p class="publication-summary">A test-time verification framework for language models that enforces correctness with respect to a set of verifiers. The framework introduces verifier compute as a new axis for test-time scaling and provides a plug-and-play mechanism to improve instance-level reliability of reasoning systems without retraining.</p>
+            <div class="publication-links">
+              <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2026/02/interwhen_final.pdf" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://github.com/microsoft/interwhen" target="_blank" class="pub-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://www.microsoft.com/en-us/research/publication/interwhen-a-generalizable-framework-for-verifiable-reasoning-with-test-time-monitors/" target="_blank" class="pub-link"><i class="fas fa-globe"></i> MSR Page</a>
+            </div>
+          </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <p><strong>Email:</strong> vishak.bhat5@gmail.com</p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Vishak-Bhat30" target="_blank">Vishak-Bhat30</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishak-k-bhat-807998227/" target="_blank">vishak-k-bhat</a></p>
+        </div>
       </div>
     </section>
+
+    <!-- ========== RESEARCH INTERESTS SECTION ========== -->
+    <section id="research" class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">04.</span> Research Interests</h2>
+        <div class="research-grid">
+          <div class="research-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="research-icon"><i class="fas fa-brain"></i></div>
+            <h3>LLM Reasoning &amp; Verified Reasoning</h3>
+            <p>Test-time verification, monitor-guided reasoning, and verifier-guided generation to ensure correctness of LLM reasoning traces at inference time.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="75">
+            <div class="research-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+            <h3>LLM Compression &amp; Optimization</h3>
+            <p>Pruning, quantization, and knowledge distillation techniques to make large models smaller and faster without sacrificing quality.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="research-icon"><i class="fas fa-gamepad"></i></div>
+            <h3>Reinforcement Learning</h3>
+            <p>Policy gradient methods, multi-armed bandits, and RL-based optimization for real-world decision-making problems.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="225">
+            <div class="research-icon"><i class="fas fa-eye"></i></div>
+            <h3>Computer Vision</h3>
+            <p>Semantic segmentation, object detection, self-supervised learning, and vision-language models for visual understanding.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="research-icon"><i class="fas fa-project-diagram"></i></div>
+            <h3>Graph Neural Networks</h3>
+            <p>Message-passing architectures and graph transformers for scientific computing, document understanding, and relational reasoning.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="375">
+            <div class="research-icon"><i class="fas fa-random"></i></div>
+            <h3>Causal Discovery</h3>
+            <p>LLM-driven causal discovery frameworks, Partial Ancestral Graphs (PAG), and structure learning from observational data.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="450">
+            <div class="research-icon"><i class="fas fa-images"></i></div>
+            <h3>Multimodal Learning &amp; VLMs</h3>
+            <p>Vision-language models, multimodal reasoning, and diffusion models for cross-modal understanding and generation.</p>
+          </div>
+          <div class="research-card" data-aos="fade-up" data-aos-delay="525">
+            <div class="research-icon"><i class="fas fa-language"></i></div>
+            <h3>Efficient Fine-tuning of LLMs</h3>
+            <p>Parameter-efficient methods like LoRA, adapters, and prompt-tuning for adapting large language models to downstream tasks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">05.</span> Projects</h2>
+        <div class="project-grid">
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-scroll"></i></div>
+              <div class="project-links"></div>
+            </div>
+            <h3>Vesuvius Challenge — Ink Detection</h3>
+            <p>Segmented ink in ancient papyrus fragments using deep learning, achieving an <strong>F-beta score of 0.74</strong>.</p>
+            <div class="project-links"><a href="https://github.com/Vishak-Bhat30/3D_image_segmentation" target="_blank" class="pub-link"><i class="fab fa-github"></i> Code</a></div>
+            <div class="project-tags">
+              <span>Segmentation</span><span>Deep Learning</span><span>Kaggle</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-user-shield"></i></div>
+              <div class="project-links"></div>
+            </div>
+            <h3>PII Classification</h3>
+            <p>Fine-tuned BERT to identify Personally Identifiable Information via masked LM, then classified PII types achieving <strong>F1 score of 0.92</strong>.</p>
+            <div class="project-tags">
+              <span>NLP</span><span>BERT</span><span>Classification</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-atom"></i></div>
+              <div class="project-links"></div>
+            </div>
+            <h3>Vision Transformers for Particle Physics</h3>
+            <p>Trained a Vision Transformer (ViT) to distinguish between electrons and photons, achieving a <strong>ROC AUC of 0.94</strong>.</p>
+            <div class="project-tags">
+              <span>ViT</span><span>Physics ML</span><span>Classification</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS SECTION ========== -->
+    <section id="achievements" class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">06.</span> Achievements</h2>
+        <div class="achievements-list">
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="0">
+            <div class="achievement-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="achievement-content">
+              <h4>Kaggle Competition Expert — Top 0.1%</h4>
+              <p>Ranked in the top 0.1% among 185k+ Kagglers worldwide. 3× Bronze Medalist.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="50">
+            <div class="achievement-icon"><i class="fas fa-microchip"></i></div>
+            <div class="achievement-content">
+              <h4>1st Prize — AMD AI Premier League Hackathon</h4>
+              <p>Won 1st Prize and a cash prize of ₹1.5 Lakh at the AMD-organized AI Premier League Hackathon held at IISc Bangalore. <a href="https://github.com/Vishak-Bhat30/AMD-AI-Premier-League" target="_blank" style="color: var(--primary); font-weight: 600;"><i class="fab fa-github"></i> Code</a></p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+            <div class="achievement-content">
+              <h4>Winner — AgenticAI Hackathon (Microsoft)</h4>
+              <p>Secured 1st place in a Microsoft-organized hackathon by developing an AI-powered fleet management system.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="achievement-icon"><i class="fas fa-code"></i></div>
+            <div class="achievement-content">
+              <h4>1st Place — Winter of Code (WOC)</h4>
+              <p>Ranked 1st out of 1000+ participants in a highly competitive hackathon.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="achievement-icon"><i class="fas fa-microphone-alt"></i></div>
+            <div class="achievement-content">
+              <h4>GSoC '24 — Selected Presenter</h4>
+              <p>Selected to present my work at the GSoC'24 Summarization Program among all GSoC students.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+            <div class="achievement-content">
+              <h4>Bronze Medalist — NeurIPS Lux-AI Challenge</h4>
+              <p>Competed in the NeurIPS Lux-AI challenge and earned a bronze medal.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+            <div class="achievement-content">
+              <h4>Bronze Medalist — LLM Competition</h4>
+              <p>Earned a bronze medal in "You Can't Please Them All" LLM Competition.</p>
+            </div>
+          </div>
+
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="350">
+            <div class="achievement-icon"><i class="fas fa-users"></i></div>
+            <div class="achievement-content">
+              <h4>Lead, ML Division — CyberLabs</h4>
+              <p>Mentored juniors through teaching sessions, earning high recognition for leadership and knowledge sharing.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section">
+      <div class="section-container contact-section">
+        <h2 class="section-title" data-aos="fade-up"><span class="section-number">07.</span> Get In Touch</h2>
+        <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">
+          I'm always open to discussing research opportunities, collaborations, or interesting ML problems.
+          Feel free to reach out!
+        </p>
+        <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+          <a href="mailto:vishak.bhat5@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>vishak.bhat5@gmail.com</span>
+          </a>
+          <a href="https://github.com/Vishak-Bhat30" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>Vishak-Bhat30</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vishak-k-bhat-807998227/" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>vishak-k-bhat</span>
+          </a>
+          <a href="https://www.kaggle.com/vishakkbhat" target="_blank" class="contact-card">
+            <i class="fab fa-kaggle"></i>
+            <span>vishakkbhat</span>
+          </a>
+        </div>
+        <div class="contact-cta" data-aos="fade-up" data-aos-delay="300">
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-primary btn-lg">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ========== FOOTER ========== -->
   <footer>
-    <p>© 2025 Vishak K Bhat</p>
+    <div class="footer-content">
+      <p>Designed &amp; Built by Vishak K Bhat</p>
+      <p class="footer-year">&copy; 2026</p>
+    </div>
   </footer>
 
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
-    function toggleAccordion(button) {
-      const content = button.nextElementSibling;
-      const icon = button.querySelector("span:last-child");
+    // Initialize AOS
+    AOS.init({
+      once: true,
+      duration: 600,
+      easing: 'ease-out-cubic'
+    });
 
-      // Close all other sections
-      const allContents = document.querySelectorAll('.exp-content');
-      const allCards = document.querySelectorAll('.exp-card');
+    // Typewriter Effect
+    const roles = [
+      "ML Researcher",
+      "Microsoft Research Intern",
+      "GSoC Contributor",
+      "Kaggle Competitions Expert",
+      "LLM Reasoning Researcher"
+    ];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typewriterEl = document.getElementById('typewriter');
 
-      allContents.forEach(c => {
-        if (c !== content) c.classList.remove('open');
-      });
-      allCards.forEach(card => {
-        if (card !== button.closest('.exp-card')) card.classList.remove('open');
-      });
-
-      // Toggle the current section
-      if (content.classList.contains('open')) {
-        content.classList.remove('open');
-        icon.textContent = "+";
+    function typewrite() {
+      const currentRole = roles[roleIndex];
+      if (isDeleting) {
+        typewriterEl.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
       } else {
-        content.classList.add('open');
-        icon.textContent = "−";
+        typewriterEl.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
       }
+
+      let speed = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIndex === currentRole.length) {
+        speed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 400;
+      }
+
+      setTimeout(typewrite, speed);
     }
+    typewrite();
+
+    // Sticky Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile Nav Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.querySelector('i').classList.toggle('fa-bars');
+      navToggle.querySelector('i').classList.toggle('fa-times');
+    });
+
+    // Close mobile nav on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.querySelector('i').classList.add('fa-bars');
+        navToggle.querySelector('i').classList.remove('fa-times');
+      });
+    });
+
+    // Active nav link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+        if (navLink) {
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navLink.classList.add('active');
+          } else {
+            navLink.classList.remove('active');
+          }
+        }
+      });
+    });
+
+    // Scroll to Top Button
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      document.body.classList.add('dark');
+      themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const icon = themeToggle.querySelector('i');
+      if (document.body.classList.contains('dark')) {
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   </script>
 </body>
 </html>
