@@ -1363,3 +1363,186 @@ body.dark .pub-link {
   background: rgba(37,99,235,0.15);
   border-color: rgba(37,99,235,0.2);
 }
+
+/* ---------- PREVIEW CARDS (Landing Page) ---------- */
+.preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.preview-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 28px;
+  transition: all var(--transition);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+  border-radius: 4px 0 0 4px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.preview-card:hover::before {
+  opacity: 1;
+}
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(37,99,235,0.2);
+}
+
+.preview-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 14px;
+  background: var(--primary-glow);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  transition: all var(--transition);
+}
+
+body.dark .preview-icon {
+  background: rgba(37,99,235,0.15);
+}
+
+.preview-card:hover .preview-icon {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.preview-info {
+  flex: 1;
+}
+
+.preview-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.preview-info p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.preview-arrow {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  transition: all var(--transition);
+  min-width: 24px;
+}
+
+.preview-card:hover .preview-arrow {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+/* ---------- PAGE HEADER (Sub-pages) ---------- */
+.page-header {
+  background: var(--hero-bg);
+  padding: 120px 24px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header .floating-shape {
+  opacity: 0.04;
+}
+
+.page-header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: white;
+  transform: translateX(-4px);
+}
+
+.page-header-content h1 {
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.page-header-content p {
+  color: rgba(241,245,249,0.6);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ---------- RESPONSIVE: Preview Cards ---------- */
+@media (max-width: 768px) {
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-card {
+    padding: 20px;
+  }
+
+  .page-header {
+    padding: 100px 20px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+
+  .preview-info h3 {
+    font-size: 1rem;
+  }
+
+  .preview-info p {
+    font-size: 0.85rem;
+  }
+}

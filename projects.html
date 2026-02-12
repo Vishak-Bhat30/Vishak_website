@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Vishak K Bhat</title>
+  <meta name="description" content="Vishak K Bhat — ML projects including Kaggle competitions, NLP, and physics ML.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">VKB</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="page-header-content">
+      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Home</a>
+      <h1 data-aos="fade-up"><span class="section-number">05.</span> Projects</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Notable projects spanning computer vision, NLP, and physics ML.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="section-container">
+        <div class="project-grid">
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-scroll"></i></div>
+            </div>
+            <h3>Vesuvius Challenge — Ink Detection</h3>
+            <p>Segmented ink in ancient papyrus fragments using deep learning, achieving an <strong>F-beta score of 0.74</strong>.</p>
+            <div class="project-links"><a href="https://github.com/Vishak-Bhat30/3D_image_segmentation" target="_blank" class="pub-link"><i class="fab fa-github"></i> Code</a></div>
+            <div class="project-tags">
+              <span>Segmentation</span><span>Deep Learning</span><span>Kaggle</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-user-shield"></i></div>
+            </div>
+            <h3>PII Classification</h3>
+            <p>Fine-tuned BERT to identify Personally Identifiable Information via masked LM, then classified PII types achieving <strong>F1 score of 0.92</strong>.</p>
+            <div class="project-tags">
+              <span>NLP</span><span>BERT</span><span>Classification</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-atom"></i></div>
+            </div>
+            <h3>Vision Transformers for Particle Physics</h3>
+            <p>Trained a Vision Transformer (ViT) to distinguish between electrons and photons, achieving a <strong>ROC AUC of 0.94</strong>.</p>
+            <div class="project-tags">
+              <span>ViT</span><span>Physics ML</span><span>Classification</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Designed &amp; Built by Vishak K Bhat</p>
+      <p class="footer-year">&copy; 2026</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>
