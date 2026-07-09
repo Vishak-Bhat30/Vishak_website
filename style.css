@@ -420,6 +420,8 @@ body.dark .navbar.scrolled {
   display: flex;
   gap: 16px;
   margin-top: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-socials a {
