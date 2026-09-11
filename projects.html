@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects — Vishak K Bhat</title>
-  <meta name="description" content="Vishak K Bhat — ML projects including Kaggle competitions, NLP, and physics ML.">
+  <meta name="description" content="Vishak K Bhat's projects: Vesuvius ink detection, question-versus-answer LLM agents, PII classification, and Vision Transformers for particle physics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div class="page-header-content">
       <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Home</a>
       <h1 data-aos="fade-up"><span class="section-number">05.</span> Projects</h1>
-      <p data-aos="fade-up" data-aos-delay="100">Notable projects spanning computer vision, NLP, and physics ML.</p>
+      <p data-aos="fade-up" data-aos-delay="100">Computer vision, multi-agent reasoning, NLP, and physics ML.</p>
     </div>
   </section>
 
@@ -52,10 +52,24 @@
               <div class="project-icon"><i class="fas fa-scroll"></i></div>
             </div>
             <h3>Vesuvius Challenge — Ink Detection</h3>
-            <p>Segmented ink in ancient papyrus fragments using deep learning, achieving an <strong>F-beta score of 0.74</strong>.</p>
+            <p>Segmented ink regions in carbonized papyrus fragments, achieving an <strong>F-beta score of 0.74</strong> and a <strong>Kaggle bronze medal</strong>.</p>
+            <p>Trained U-Net models with ResNet, DenseNet, SE-ResNet, VGG, and Inception backbones using segmentation-models-pytorch. Combined ensembles and test-time augmentation to improve generalization and leaderboard performance.</p>
             <div class="project-links"><a href="https://github.com/Vishak-Bhat30/3D_image_segmentation" target="_blank" class="pub-link"><i class="fab fa-github"></i> Code</a></div>
             <div class="project-tags">
-              <span>Segmentation</span><span>Deep Learning</span><span>Kaggle</span>
+              <span>PyTorch</span><span>U-Net</span><span>Ensembling</span><span>TTA</span>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="75">
+            <div class="project-card-header">
+              <div class="project-icon"><i class="fas fa-robot"></i></div>
+            </div>
+            <h3>Question Vs Answer Agents</h3>
+            <p>Built competing LLM-based question and answer agents for a head-to-head AI tournament, securing <strong>1st place</strong> among competing agent teams.</p>
+            <p>Improved performance through supervised fine-tuning, GRPO-based reinforcement learning, and self-play. Curated synthetic datasets and engineered prompts for reasoning accuracy and structured output compliance.</p>
+            <div class="project-links"><a href="https://github.com/Vishak-Bhat30/AMD-AI-Premier-League" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fab fa-github"></i> Code</a></div>
+            <div class="project-tags">
+              <span>Multi-Agent AI</span><span>LLMs</span><span>GRPO</span><span>Self-Play</span>
             </div>
           </div>
 
@@ -75,12 +89,29 @@
               <div class="project-icon"><i class="fas fa-atom"></i></div>
             </div>
             <h3>Vision Transformers for Particle Physics</h3>
-            <p>Trained a Vision Transformer (ViT) to distinguish between electrons and photons, achieving a <strong>ROC AUC of 0.94</strong>.</p>
+            <p>Trained a Vision Transformer (ViT) to distinguish between electrons and photons, achieving a <strong>ROC AUC of 0.94</strong>. Improved matrix-data preprocessing to increase accuracy by <strong>8%</strong>.</p>
+            <p>Trained large models using Azure and Google Cloud virtual machines.</p>
+            <div class="project-links"><a href="https://github.com/Vishak-Bhat30/ML4SCI" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fab fa-github"></i> Code</a></div>
             <div class="project-tags">
-              <span>ViT</span><span>Physics ML</span><span>Classification</span>
+              <span>ViT</span><span>Physics ML</span><span>PyTorch</span><span>Azure</span>
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="section-container">
+        <h2 class="section-title" data-aos="fade-up">Languages &amp; Tools</h2>
+        <div class="skill-tags" data-aos="fade-up">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">C</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">Transformers</span>
         </div>
       </div>
     </section>

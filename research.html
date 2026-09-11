@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Research &amp; Publications — Vishak K Bhat</title>
-  <meta name="description" content="Vishak K Bhat — Publications and research interests in LLM reasoning, computer vision, GNN, and more.">
+  <meta name="description" content="Research by Vishak K Bhat: interwhen for verifiable LLM reasoning, Genesis for explainable causal discovery, and GNNs for muon momentum estimation.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -49,14 +49,34 @@
         <h2 class="section-title" data-aos="fade-up">Publications</h2>
         <div class="publications-list">
           <div class="publication-item" data-aos="fade-up" data-aos-delay="0">
-            <div class="publication-venue"><span class="venue-badge accepted">ICLR 2026 LLM Reasoning Workshop · Accepted</span> <span class="venue-badge under-review">NeurIPS 2026 · Under Review</span></div>
-            <h3 class="publication-title">interwhen: A Generalizable Framework for Verifiable Reasoning with Test-time Monitors</h3>
-            <p class="publication-authors"><strong>Vishak K Bhat</strong>, Prateek Chanda, Ashmit Khandelwal, Maitreyi Swaroop, Subbarao Kambhampati, Vineeth N. Balasubramanian, Nagarajan Natarajan, Amit Sharma</p>
-            <p class="publication-summary">A test-time verification framework for language models that enforces correctness with respect to a set of verifiers. The framework introduces verifier compute as a new axis for test-time scaling and provides a plug-and-play mechanism to improve instance-level reliability of reasoning systems without retraining.</p>
+            <div class="publication-venue">
+              <span class="venue-badge accepted">ICLR 2026 VerifAI-2 Workshop</span>
+              <span class="venue-badge accepted">ICLR 2026 LLM Reasoning Workshop</span>
+              <span class="venue-badge under-review">NeurIPS 2026 &middot; Under Review</span>
+            </div>
+            <h3 class="publication-title">interwhen: A Generalizable Framework for Steering Reasoning Models with Test-time Verification</h3>
+            <p class="publication-authors"><strong>Vishak K Bhat</strong>, Prateek Chanda, Vijval Ekbote, Ashmit Khandelwal, Maitreyi Swaroop, Vineeth N. Balasubramanian, Subbarao Kambhampati, Nagarajan Natarajan, Amit Sharma</p>
+            <p class="publication-summary">An open-source test-time scaling framework that verifies intermediate reasoning steps and steers LLM generation through asynchronous fork-and-verify reasoning. Verification runs alongside the main model stream, supporting reliable agentic and non-agentic reasoning with negligible latency overhead on correct executions. Early stopping provides an additional way to reduce token usage and inference cost.</p>
             <div class="publication-links">
-              <a href="https://arxiv.org/pdf/2602.11202" target="_blank" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://arxiv.org/abs/2602.11202" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
               <a href="https://github.com/microsoft/interwhen" target="_blank" class="pub-link"><i class="fab fa-github"></i> Code</a>
               <a href="https://www.microsoft.com/en-us/research/publication/interwhen-a-generalizable-framework-for-verifiable-reasoning-with-test-time-monitors/" target="_blank" class="pub-link"><i class="fas fa-globe"></i> MSR Page</a>
+            </div>
+          </div>
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="75">
+            <div class="publication-venue"><span class="venue-badge under-review">AAAI 2027 &middot; Under Review</span></div>
+            <h3 class="publication-title">Genesis: Towards Explainable Causal Discovery</h3>
+            <p class="publication-authors"><strong>Vishak K Bhat</strong>, Abhinav Thorat, Ravi Kumar Kolla, Niranjan Pedanekar</p>
+            <p class="publication-summary">An LLM-driven framework for explainable causal discovery, developed at Sony Research India. The work combines Partial Ancestral Graphs (PAG) with LLM-guided search and evaluates causal discovery on standard datasets including Asia, Cancer, Earthquake, Child, and Survey.</p>
+          </div>
+          <div class="publication-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="publication-venue"><span class="venue-badge">arXiv Preprint &middot; GSoC 2024</span></div>
+            <h3 class="publication-title">GNN for Muon Particle Momentum Estimation</h3>
+            <p class="publication-authors"><strong>Vishak K Bhat</strong>, Eric A. F. Reinhardt, Sergei Gleyzer</p>
+            <p class="publication-summary">Graph neural networks for estimating muon momentum in the CMS experiment at the Large Hadron Collider. The work studies graph construction and node features to capture detector relationships and improve the accuracy and efficiency of momentum estimation.</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2603.06675" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://github.com/ML4SCI/CMS" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const typewriterEl = document.getElementById('typewriter');
 if (typewriterEl) {
   const roles = [
     "ML Researcher",
-    "Microsoft Research Intern",
+    "Microsoft Research Fellow",
     "GSoC Contributor",
     "Kaggle Competitions Expert",
     "LLM Reasoning Researcher"
